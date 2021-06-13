@@ -1,1 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/starter-code/assets/background-stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#070625;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    padding: 20px 10px
+}
+
+#title{
+    /* border: 2px solid blue; */
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: white;
+}
+
+#planets{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.middle_Content{
+    /* border: 2px solid red; */
+    width: 70%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plant_content{
+    width: 22vw;
+}
+
+.buttons{
+    width: ;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+footer{
+    /* border: 2px solid purple; */
+    width: 70%;    
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    border: 2px solid grey;
+    padding: 20px 40px;
+}
 
