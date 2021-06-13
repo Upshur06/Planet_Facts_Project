@@ -102,7 +102,39 @@
   
   </div>
 
+    <script>
+        let id = 0;
 
+        let planet = document.getElementById('planet_img');
+        let title = document.getElementById('planet_name');
+        let overview = document.getElementById('overview');
+        let wiki = document.getElementById('wiki_source');
+
+
+        fetch('data.json')
+        .then((data) => {return data.json()})
+        // .then((console.log))
+        .then((data)=>{
+          planet.src = data[id].images.planet;
+          title.innerText = data[id].name;
+          wiki.href = data[id].overview.source
+        })
+
+        function changePlanet(e){
+          id = e;
+
+          fetch('data.json')
+          .then((data) => {return data.json()})
+          // .then((console.log))
+          .then((data)=>{
+            planet.src = data[id].images.planet;
+            console.log(data)
+            title.innerText = data[id].name;
+            wiki.href = data[id].overview.source
+          })
+        }
+
+    </script>
 
 </body>
 </html>
