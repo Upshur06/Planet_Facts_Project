@@ -5,59 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/styles.css">
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Saturn
 
-  <!-- Overview Content Start -->
+  <div class='container'>
+    <header>
+      <h2 id="title">The Planets</h2>
+      <div id="planets">   
+          <a href="/starter-code/index.html">Mercury</a>
+          <a href="/starter-code/venus.html">Venus</a>
+          <a href="/starter-code/earth.html">Earth</a>
+          <a href="/starter-code/mars.html">Mars</a>
+          <a href="/starter-code/jupiter.html">Jupiter</a>
+          <a href="/starter-code/saturn.html">Saturn</a>
+          <a href="/starter-code/uranus.html">Uranus</a>
+          <a href="/starter-code/neptune.html">Neptune</a>
+      </div>
+    </header>
 
-  Saturn is the sixth planet from the Sun and the second-largest in the Solar 
-  System, after Jupiter. It is a gas giant with an average radius of about 
-  nine and a half times that of Earth. It only has one-eighth the average 
-  density of Earth.
+    <hr>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+    <div class="middle_Content">
 
-  <!-- Overview Content End -->
+      <div class="planet_Image">
+        <img src="./assets/planet-saturn.svg" alt="">
+      </div>
 
-  <!-- Internal Structure Content Start -->
+      <div class="plant_content">
 
-  Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
-  is not in the gas phase, because hydrogen becomes a non-ideal liquid 
-  when the density is above 0.01 g/cm3, which is reached at a radius 
-  containing 99.9% of Saturn's mass.
+        <h1>Saturn</h1>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
+        <!-- Overview Content Start -->
 
-  <!-- Internal Structure Content End -->
+        <p>
+          Saturn is the sixth planet from the Sun and the second-largest in the Solar 
+          System, after Jupiter. It is a gas giant with an average radius of about 
+          nine and a half times that of Earth. It only has one-eighth the average 
+          density of Earth.
+        </p>
 
-  <!-- Surface Geology Content Start -->
+        <p id="wiki">
+           Source : <a href="https://en.wikipedia.org/wiki/Saturn"> Wikipedia </a>
+        </p>
+        <!-- Overview Content End -->
 
-  The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
-  helium by volume. The planet's most famous feature is its prominent ring 
-  system, which is composed mostly of ice particles with a smaller amount 
-  of rocky debris and dust. 
+        <!-- Internal Structure Content Start -->
+        <!-- <p>
+          Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
+          is not in the gas phase, because hydrogen becomes a non-ideal liquid 
+          when the density is above 0.01 g/cm3, which is reached at a radius 
+          containing 99.9% of Saturn's mass.
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
+          Source : Wikipedia URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure
+        </p> -->
+        <!-- Internal Structure Content End -->
 
-  <!-- Surface Geology Content End -->
+        <!-- Surface Geology Content Start -->
+        <!-- <p>
+          The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
+          helium by volume. The planet's most famous feature is its prominent ring 
+          system, which is composed mostly of ice particles with a smaller amount 
+          of rocky debris and dust. 
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  10.8 Hours
-
-  Revolution Time
-  29.46 Years
-
-  Radius
-  58,232 KM
-
-  Average Temp.
-  -138°c
+          Source : Wikipedia URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere
+        </p> -->
+        <!-- Surface Geology Content End -->
+        <div class="buttons">
+          <div> 01 Overview </div>
+          <div> 02 Internal Structure </div>
+          <div> 03 Surface Geology </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div>
+        <p>Rotation Time</p>
+        <h1>10.8 Hours</h1>
+      </div>
+      <div>
+        <p>Revolution Time</p>
+        <h1>29.46 Years</h1>
+      </div>
+      <div>
+        <p>Radius</p>
+        <h1>58,232 KM</h1>
+      </div>
+      <div>
+        <p>Average Temp.</p>
+        <h1>-138°c</h1>
+      </div>
+    </footer>
+  
+  </div>
 </body>
 </html>

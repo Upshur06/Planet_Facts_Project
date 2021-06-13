@@ -5,58 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/styles.css">
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
-  Uranus
 
-  <!-- Overview Content Start -->
+  <div class='container'>
+    <header>
+      <h2 id="title">The Planets</h2>
+      <div id="planets">   
+          <a href="/starter-code/index.html">Mercury</a>
+          <a href="/starter-code/venus.html">Venus</a>
+          <a href="/starter-code/earth.html">Earth</a>
+          <a href="/starter-code/mars.html">Mars</a>
+          <a href="/starter-code/jupiter.html">Jupiter</a>
+          <a href="/starter-code/saturn.html">Saturn</a>
+          <a href="/starter-code/uranus.html">Uranus</a>
+          <a href="/starter-code/neptune.html">Neptune</a>
+      </div>
+    </header>
 
-  Uranus is the seventh planet from the Sun. Its name is a reference to the 
-  Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
-  of Ares. It has the third-largest planetary radius and fourth-largest planetary 
-  mass in the Solar System.
+    <hr>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus -->
+    <div class="middle_Content">
 
-  <!-- Overview Content End -->
+      <div class="planet_Image">
+        <img src="./assets/planet-uranus.svg" alt="">
+      </div>
 
-  <!-- Internal Structure Content Start -->
+      <div class="plant_content">
 
-  The standard model of Uranus's structure is that it consists of three layers: a 
-  rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and 
-  an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
-  mass of only 0.55 Earth masses.
+        <h1>Uranus</h1>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Internal_structure -->
+        <!-- Overview Content Start -->
 
-  <!-- Internal Structure Content End -->
+        <p>
+          Uranus is the seventh planet from the Sun. Its name is a reference to the 
+          Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
+          of Ares. It has the third-largest planetary radius and fourth-largest planetary 
+          mass in the Solar System.
+        </p>
 
-  <!-- Surface Geology Content Start -->
+        <p id="wiki">
+           Source : <a href="https://en.wikipedia.org/wiki/Uranus"> Wikipedia </a>
+        </p>
+        <!-- Overview Content End -->
 
-  The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
-  of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
-  helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
+        <!-- Internal Structure Content Start -->
+        <!-- <p>
+          The standard model of Uranus's structure is that it consists of three layers: a 
+          rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and 
+          an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
+          mass of only 0.55 Earth masses.
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Atmosphere -->
+          Source : Wikipedia URL: https://en.wikipedia.org/wiki/Uranus#Internal_structure
+        </p> -->
+        <!-- Internal Structure Content End -->
 
-  <!-- Surface Geology Content End -->
+        <!-- Surface Geology Content Start -->
+        <!-- <p>
+          The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
+          of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
+          helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+          Source : Wikipedia URL: https://en.wikipedia.org/wiki/Uranus#Atmosphere
+        </p> -->
+        <!-- Surface Geology Content End -->
+        <div class="buttons">
+          <div> 01 Overview </div>
+          <div> 02 Internal Structure </div>
+          <div> 03 Surface Geology </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div>
+        <p>Rotation Time</p>
+        <h1>17.2 Hours</h1>
+      </div>
+      <div>
+        <p>Revolution Time</p>
+        <h1>84 Years</h1>
+      </div>
+      <div>
+        <p>Radius</p>
+        <h1>25,362 KM</h1>
+      </div>
+      <div>
+        <p>Average Temp.</p>
+        <h1>-195°c</h1>
+      </div>
+    </footer>
 
-  Rotation Time
-  17.2 Hours
-
-  Revolution Time
-  84 Years
-
-  Radius
-  25,362 KM
-
-  Average Temp.
-  -195°c
+  </div>
 </body>
 </html>
