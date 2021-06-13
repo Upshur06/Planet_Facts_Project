@@ -41,10 +41,7 @@
         <!-- Overview Content Start -->
 
         <p id="overview">
-          Mercury is the smallest planet in the Solar System and the closest 
-          to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
-          shortest of all the Sun's planets. Mercury is one of four terrestrial 
-          planets in the Solar System, and is a rocky body like Earth.
+          
         </p>
 
         <p id="wiki">
@@ -84,19 +81,19 @@
     <footer>
       <div>
         <p>Rotation Time</p>
-        <h1 id="rotation">58.6 Days</h1>
+        <h1 id="rotation"></h1>
       </div>
       <div>
         <p>Revolution Time</p>
-        <h1 id="revolution">87.97 Days</h1>
+        <h1 id="revolution"></h1>
       </div>
       <div>
         <p>Radius</p>
-        <h1 id="radius">2,439.7 KM</h1>
+        <h1 id="radius"></h1>
       </div>
       <div>
         <p>Average Temp.</p>
-        <h1 id="average">430°c</h1>
+        <h1 id="average"></h1>
       </div>
     </footer>
   
@@ -109,7 +106,10 @@
         let title = document.getElementById('planet_name');
         let overview = document.getElementById('overview');
         let wiki = document.getElementById('wiki_source');
-
+        let rotation = document.getElementById('rotation');
+        let revolution = document.getElementById('revolution');
+        let radius = document.getElementById('radius');
+        let average = document.getElementById('average');
 
         fetch('data.json')
         .then((data) => {return data.json()})
@@ -117,7 +117,12 @@
         .then((data)=>{
           planet.src = data[id].images.planet;
           title.innerText = data[id].name;
-          wiki.href = data[id].overview.source
+          overview.innerText = data[id].overview.content;
+          wiki.href = data[id].overview.source;
+          rotation.innerText = data[id].rotation;
+          revolution.innerText = data[id].revolution;
+          radius.innerText = data[id].radius;
+          average.innerText = data[id].temperature;
         })
 
         function changePlanet(e){
@@ -128,12 +133,15 @@
           // .then((console.log))
           .then((data)=>{
             planet.src = data[id].images.planet;
-            console.log(data)
             title.innerText = data[id].name;
-            wiki.href = data[id].overview.source
+            overview.innerText = data[id].overview.content;
+            wiki.href = data[id].overview.source;
+            rotation.innerText = data[id].rotation;
+            revolution.innerText = data[id].revolution;
+            radius.innerText = data[id].radius;
+            average.innerText = data[id].temperature;
           })
         }
-
     </script>
 
 </body>
