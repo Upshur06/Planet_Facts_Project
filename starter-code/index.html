@@ -14,16 +14,16 @@
   <div class='container'>
     <header>
       <h2 id="title">The Planets</h2>
-      <div id="planets">   
-          <a href="/starter-code/index.html">Mercury</a>
-          <a href="/starter-code/venus.html">Venus</a>
-          <a href="/starter-code/earth.html">Earth</a>
-          <a href="/starter-code/mars.html">Mars</a>
-          <a href="/starter-code/jupiter.html">Jupiter</a>
-          <a href="/starter-code/saturn.html">Saturn</a>
-          <a href="/starter-code/uranus.html">Uranus</a>
-          <a href="/starter-code/neptune.html">Neptune</a>
-      </div>
+      <div id="planets">  
+        <button onclick="changePlanet(this.value)" class="nav__items" value="0">Mercury</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="1">Venus</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="2">Earth</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="3">Mars</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="4">Jupiter</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="5">Saturn</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="6">Uranus</button>
+        <button onclick="changePlanet(this.value)" class="nav__items" value="7">Neptune</button>
+    </div>
     </header>
 
     <hr>
@@ -31,16 +31,16 @@
     <div class="middle_Content">
 
       <div class="planet_Image">
-        <img src="./assets/planet-mercury.svg" alt="">
+        <img id="planet_img" src="" alt="">
       </div>
 
       <div class="plant_content">
 
-        <h1>Mercury</h1>
+        <h1 id="planet_name"></h1>
 
         <!-- Overview Content Start -->
 
-        <p>
+        <p id="overview">
           Mercury is the smallest planet in the Solar System and the closest 
           to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
           shortest of all the Sun's planets. Mercury is one of four terrestrial 
@@ -48,7 +48,7 @@
         </p>
 
         <p id="wiki">
-           Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)"> Wikipedia </a>
+           Source : <a id="wiki_source" href=""> Wikipedia </a>
         </p>
         <!-- Overview Content End -->
 
@@ -84,22 +84,25 @@
     <footer>
       <div>
         <p>Rotation Time</p>
-        <h1>58.6 Days</h1>
+        <h1 id="rotation">58.6 Days</h1>
       </div>
       <div>
         <p>Revolution Time</p>
-        <h1>87.97 Days</h1>
+        <h1 id="revolution">87.97 Days</h1>
       </div>
       <div>
         <p>Radius</p>
-        <h1>2,439.7 KM</h1>
+        <h1 id="radius">2,439.7 KM</h1>
       </div>
       <div>
         <p>Average Temp.</p>
-        <h1>430°c</h1>
+        <h1 id="average">430°c</h1>
       </div>
     </footer>
   
   </div>
+
+
+
 </body>
 </html>

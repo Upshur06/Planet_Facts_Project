@@ -13,15 +13,15 @@
   <div class='container'>
     <header>
       <h2 id="title">The Planets</h2>
-      <div id="planets">   
-          <a href="/starter-code/index.html">Mercury</a>
-          <a href="/starter-code/venus.html">Venus</a>
-          <a href="/starter-code/earth.html">Earth</a>
-          <a href="/starter-code/mars.html">Mars</a>
-          <a href="/starter-code/jupiter.html">Jupiter</a>
-          <a href="/starter-code/saturn.html">Saturn</a>
-          <a href="/starter-code/uranus.html">Uranus</a>
-          <a href="/starter-code/neptune.html">Neptune</a>
+      <div id="planets">  
+        <button class="nav__items" vlaue="0">Mercury</button>
+        <button class="nav__items" vlaue="1">Venus</button>
+        <button class="nav__items" vlaue="2">Earth</button>
+        <button class="nav__items" vlaue="3">Mars</button>
+        <button class="nav__items" vlaue="4">Jupiter</button>
+        <button class="nav__items" vlaue="5">Saturn</button>
+        <button class="nav__items" vlaue="6">Uranus</button>
+        <button class="nav__items" vlaue="7">Neptune</button>
       </div>
     </header>
 
@@ -30,16 +30,16 @@
     <div class="middle_Content">
 
       <div class="planet_Image">
-        <img src="./assets/planet-earth.svg" alt="">
+        <img id="planet_img" src="./assets/planet-earth.svg" alt="">
       </div>
 
       <div class="plant_content">
 
-        <h1>Earth</h1>
+        <h1 id="planet_name">Earth</h1>
 
         <!-- Overview Content Start -->
 
-        <p>
+        <p id="overview">
           Third planet from the Sun and the only known planet to harbor life. 
           About 29.2% of Earth's surface is land with remaining 70.8% is 
           covered with water. Earth's distance from the Sun, physical properties 
@@ -47,7 +47,7 @@
         </p>
 
         <p id="wiki">
-           Source : <a href="https://en.wikipedia.org/wiki/Earth"> Wikipedia </a>
+           Source : <a id="wiki_source" href="https://en.wikipedia.org/wiki/Earth"> Wikipedia </a>
         </p>
         <!-- Overview Content End -->
 
@@ -83,22 +83,24 @@
     <footer>
       <div>
         <p>Rotation Time</p>
-        <h1>0.99 Days</h1>
+        <h1 id="rotation">0.99 Days</h1>
       </div>
       <div>
         <p>Revolution Time</p>
-        <h1>365.26 Days</h1>
+        <h1 id="revolution">365.26 Days</h1>
       </div>
       <div>
         <p>Radius</p>
-        <h1>6,371 KM</h1>
+        <h1 id="radius">6,371 KM</h1>
       </div>
       <div>
         <p>Average Temp.</p>
-        <h1>16°c</h1>
+        <h1 id="average">16°c</h1>
       </div>
     </footer>
    
   </div>
+
+
 </body>
 </html>
